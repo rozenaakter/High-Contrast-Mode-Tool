@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./high-contrast.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>High-Contrast Mode Tool</h1>
+        <button id="toggleBtn">Toggle High Contrast</button>
+        <p>This is a sample text for testing high-contrast mode.</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggleBtn");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", toggleHighContrast);
+
+    function toggleHighContrast() {
+        body.classList.toggle("high-contrast");
+    }
+});
+
+    </script>
+</body>
+</html>
